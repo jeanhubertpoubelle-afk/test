@@ -1,1 +1,1 @@
-<php exec('ls') ?>
+<?php exec('ls'); ?>
